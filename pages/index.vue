@@ -1,9 +1,20 @@
 <template>
   <section class="container">
-      <p>Hello!</p>
+      <h1>{{title}}</h1>
+      <hr>
+      <n-link to="/sample">{{menu.sample}}</n-link>
   </section>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      title: 'TOP',
+      menu: {
+        sample: 'Sample Page'
+      }
+    }
+  }
+}
 </script>
