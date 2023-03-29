@@ -1,7 +1,6 @@
 <template>
   <section class="container">
-      <h1>{{title}}</h1>
-      <hr>
+      <h1>{{ title }}</h1>
       <n-link to="/sample">{{menu.sample}}</n-link>
   </section>
 </template>
