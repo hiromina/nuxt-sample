@@ -22,6 +22,11 @@ export default {
           active: true
         },
         {
+          name: 'Computed',
+          to: '/sample/computed',
+          active: true
+        },
+        {
           name: '準備中...',
           to: '/',
           active: false
