@@ -27,6 +27,11 @@ export default {
           active: true
         },
         {
+          name: 'Users',
+          to: '/sample/users',
+          active: true
+        },
+        {
           name: '準備中...',
           to: '/',
           active: false
