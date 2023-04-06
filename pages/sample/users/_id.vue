@@ -12,6 +12,9 @@ export default {
     return {
       from: 'Users'
     }
+  },
+  validate({ params }) {
+    return /^\d+$/.test(params.id);
   }
 }
 </script>
