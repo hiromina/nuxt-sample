@@ -5,8 +5,8 @@
     <button @click="addItem">追加</button>
     <button @click="deleteItem">完了したものを削除</button>
     <br>
-    <table v-for="item in items">
-      <tr>
+    <table>
+      <tr v-for="item in items">
         <td :class="{ 'done' : item.isDone }"><input type="checkbox" v-model="item.isDone">{{ item.value }}</td>
       </tr>
     </table>
@@ -36,13 +36,7 @@ export default {
       this.newItem = '';
     },
     deleteItem() {
-      let newItems = [];
-      for (let i = 0; i < this.items.length; i++) {
-        if(!this.items[i].isDone) {
-          newItems.push(this.items[i]);
-        }
-      }
-      this.items = newItems;
+      this.items = this.items.filter(item => !item.isDone);
     }
   }
 }
